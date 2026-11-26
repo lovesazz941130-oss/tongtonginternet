@@ -6,6 +6,14 @@
 <title>통통인터넷 | 인터넷·TV·유심 3초 견적 비교, 설치 당일 현금 사은품</title>
 <meta name="description" content="SK브로드밴드·KT·LG유플러스·스카이라이프·LG헬로비전 인터넷·TV·유심 조건을 한 번에 비교하고, 설치 당일 현금 사은품을 계좌로 받으세요. 상담 무료, 주민등록번호 직접 요구 없음.">
 <meta name="theme-color" content="#0B2A5B">
+<!-- Google Ads 전환 추적 — 홈페이지 상담 신청 완료 (AW-18564433551) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18564433551"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18564433551');
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230B2A5B'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23fff'/%3E%3Cpath d='M20 27h8M36 27h8' stroke='%230B2A5B' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M23 37c2.4 2.9 5 4.3 9 4.3s6.6-1.4 9-4.3' stroke='%230B2A5B' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="통통인터넷 | 인터넷·TV·유심 3초 견적 비교">
@@ -2007,6 +2015,15 @@ $("#leadForm").addEventListener("submit", async e => {
     $("#formAlert").textContent = "전송에 실패했어요. 잠시 후 다시 시도하시거나 " + PHONE + "으로 전화 주세요.";
     $("#formAlert").classList.add("show");
     return;
+  }
+
+  // Google Ads 전환 1회 기록 — 유효성 검사 통과 + 웹훅 전송 성공 시점
+  if (typeof gtag === "function") {
+    gtag("event", "conversion", {
+      "send_to": "AW-18564433551/uVwdCJDf0b8dEI-Nm5RF",
+      "value": 1.0,
+      "currency": "KRW"
+    });
   }
 
   // 완료 화면
